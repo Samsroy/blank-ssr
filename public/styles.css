@@ -1,0 +1,10 @@
+:root { --accent: #2b6cff; --bg: #ffffff; --text: #111111; }
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif}
+.app-shell{max-width:720px;margin:0 auto;padding:40px}
+.app-title{margin:0 0 8px}
+.app-subtitle{margin:0 0 24px;color:#555}
+.action-button{display:inline-block;border:0;border-radius:8px;padding:10px 16px;background:var(--accent);color:#fff;cursor:pointer}
+.action-button:active{transform:translateY(1px)}
+.status-text{margin-top:12px;min-height:1.5em}
