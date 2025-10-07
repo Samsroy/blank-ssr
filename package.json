@@ -5,7 +5,9 @@
   "description": "Minimal static server for Builder preview",
   "scripts": {
     "start": "node server.js",
-    "dev": "node server.js"
+    "dev": "node server.js",
+    "build": "node scripts/prerender.js",
+    "preview": "node server.js"
   },
   "engines": {
     "node": ">=18"
