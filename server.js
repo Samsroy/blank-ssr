@@ -21,7 +21,7 @@ const mimeTypes = {
 
 const port = process.env.PORT ? parseInt(process.env.PORT, 10) : 4200;
 const host = '0.0.0.0';
-const publicDir = path.join(__dirname, 'public');
+const publicDir = path.join(__dirname, process.env.STATIC_DIR || 'public');
 
 function sendFile(res, filePath, contentType, statusCode = 200) {
   const stream = fs.createReadStream(filePath);
